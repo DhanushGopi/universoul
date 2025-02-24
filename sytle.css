@@ -1,0 +1,203 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+ body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+    
+}
+
+.cont{
+     width: 1000px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 25px;
+}
+
+.frames{
+    border-radius: 16px;
+    background-position: center;
+     background-repeat: no-repeat; 
+     background-size: cover; 
+}
+
+.frame1{
+    grid-area: frame1;
+     
+     height: 420px;
+     background-color: blue;
+     background-image: url(./assets/frame1.jpg);  
+}
+
+.frame2{
+    object-fit: contain;
+    grid-area: frame2;
+     
+     height: 420px; 
+     background-color: blue; 
+     background-image: url(./assets/frame2.png);   
+}
+
+.frame3{
+    object-fit: contain;
+    grid-area: frame3;
+   
+    height: 420px; 
+    background-color: blue; 
+    background-image: url(./assets/frame3.png); 
+
+}
+
+.frame4{
+    object-fit: contain;
+    grid-area: frame4;
+     
+     height: 420px; 
+     background-color: blue; 
+     background-image: url(./assets/frame4.png); 
+}
+
+.frame5{    
+    object-fit: contain;
+    grid-area: frame5;
+    
+    height: 420px; 
+    background-color: blue; 
+    background-image: url(./assets/frame5.png); 
+}
+
+.frame6{
+    object-fit: contain;
+    grid-area: frame6;
+   
+    height: 850px;
+    background-color: blue; 
+    background-image: url(./assets/frame6.png); 
+
+}
+
+.frame7{
+    object-fit: contain;
+    grid-area: frame7;
+    
+    height: 420px; 
+    background-color: blue; 
+    background-image: url(./assets/frame7.png); 
+
+}
+
+.frame8{
+    object-fit: contain;
+    grid-area: frame8;
+    
+    height: 420px; 
+    background-color: blue; 
+    background-image: url(./assets/frame8.png); 
+
+}
+
+.frame9{
+    object-fit: contain;
+    grid-area: frame9;
+    
+     height: 850px;
+     background-color: blue; 
+     background-image: url(./assets/frame9.png); 
+}
+
+.frame10{
+    object-fit: contain;
+    grid-area: frame10;
+     
+     height: 850px;
+     background-color: blue; 
+     background-image: url(./assets/frame10.png); 
+
+}
+
+.frame11{
+    object-fit: contain;
+    grid-area: frame11;
+   
+    height: 850px;
+    background-color: blue; 
+    background-image: url(./assets/frame11.png); 
+
+}
+
+.frame12{
+    object-fit: contain;
+    grid-area: frame12;
+    
+     height: 850px;
+     background-color: blue;
+     background-image: url(./assets/frame12.png);  
+
+}
+
+.frame13{   
+    object-fit: contain;
+    grid-area: frame13;
+     
+     height: 850px;
+     background-color: blue;
+     background-image: url(./assets/frame13.png);  
+
+}
+
+.frame14{
+    object-fit: contain;
+    grid-area: frame14;
+     
+     height: 850px;
+     background-color: blue; 
+     background-image: url(./assets/frame14.png); 
+}
+
+.frame15{
+    width: 1030px;
+    padding: 50px 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Archivo", serif;
+font-size: 20px;
+color: rgb(29, 29, 29);
+font-weight: 500;
+text-decoration: none;
+background-color: white;
+
+}
+
+
+.cont-frames{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+     /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas:
+    "frame1 frame1 frame1 frame1"
+    "frame2 frame2 frame3 frame4"
+    "frame5 frame5 frame5 frame5"
+    "frame6 frame6 frame7 frame7"
+    "frame6 frame6 frame8 frame8"
+    "frame9 frame9 frame10 frame10"
+    "frame9 frame9 frame10 frame10"
+    "frame11 frame11 frame12 frame12"
+    "frame11 frame11 frame12 frame12"
+    "frame13 frame13 frame13 frame14"
+    "frame13 frame13 frame13 frame14"
+    "frame15 frame15 frame15 frame15"
+    ;
+
+
+}
