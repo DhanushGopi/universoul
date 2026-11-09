@@ -26,7 +26,7 @@ body {
     border-radius: 16px;
     background-position: center;
     background-repeat: no-repeat; 
-    background-size: contain; /* Changed from cover to contain so assets don't get cut off */
+    background-size: contain; 
 }
 
 .frame1 {
@@ -164,7 +164,7 @@ body {
     "frame15 frame15 frame15 frame15";
 }
 
-/* Mobile Responsive Media Query */
+/* Mobile Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .cont {
         margin: 10px 10px;
@@ -188,5 +188,14 @@ body {
         "frame13"
         "frame14"
         "frame15";
+    }
+
+    /* Automatically scale frame heights proportionally on mobile so images aren't cropped or distorted */
+    .frame1, .frame2, .frame3, .frame4, .frame5, .frame7, .frame8 {
+        height: 250px;
+    }
+
+    .frame6, .frame9, .frame10, .frame11, .frame12, .frame13, .frame14 {
+        height: 400px;
     }
 }
