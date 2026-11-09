@@ -22,114 +22,34 @@ body {
     margin: 10px 25px;
 }
 
+/* Base styles for all image frames */
 .frames {
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: 16px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: contain; 
+    object-fit: contain;
 }
 
-.frame1 {
-    grid-area: frame1;
-    height: 420px;
-    background-color: blue;
-    background-image: url(./assets/frame1.jpg);  
-}
-
-.frame2 {
-    grid-area: frame2;
-    height: 420px; 
-    background-color: blue; 
-    background-image: url(./assets/frame2.png);   
-}
-
-.frame3 {
-    grid-area: frame3;
-    height: 420px; 
-    background-color: blue; 
-    background-image: url(./assets/frame3.png); 
-}
-
-.frame4 {
-    grid-area: frame4;
-    height: 420px; 
-    background-color: blue; 
-    background-image: url(./assets/frame4.png); 
-}
-
-.frame5 {    
-    grid-area: frame5;
-    height: 420px; 
-    background-color: blue; 
-    background-image: url(./assets/frame5.png); 
-}
-
-.frame6 {
-    grid-area: frame6;
-    height: 850px;
-    background-color: blue; 
-    background-image: url(./assets/frame6.png); 
-}
-
-.frame7 {
-    grid-area: frame7;
-    height: 420px; 
-    background-color: blue; 
-    background-image: url(./assets/frame7.png); 
-}
-
-.frame8 {
-    grid-area: frame8;
-    height: 420px; 
-    background-color: blue; 
-    background-image: url(./assets/frame8.png); 
-}
-
-.frame9 {
-    grid-area: frame9;
-    height: 850px;
-    background-color: blue; 
-    background-image: url(./assets/frame9.png); 
-}
-
-.frame10 {
-    grid-area: frame10;
-    height: 850px;
-    background-color: blue; 
-    background-image: url(./assets/frame10.png); 
-}
-
-.frame11 {
-    grid-area: frame11;
-    height: 850px;
-    background-color: blue; 
-    background-image: url(./assets/frame11.png); 
-}
-
-.frame12 {
-    grid-area: frame12;
-    height: 850px;
-    background-color: blue;
-    background-image: url(./assets/frame12.png);  
-}
-
-.frame13 {   
-    grid-area: frame13;
-    height: 850px;
-    background-color: blue;
-    background-image: url(./assets/frame13.png);  
-}
-
-.frame14 {
-    grid-area: frame14;
-    height: 850px;
-    background-color: blue; 
-    background-image: url(./assets/frame14.png); 
-}
+/* Grid Area Mappings */
+.frame1 { grid-area: frame1; }
+.frame2 { grid-area: frame2; }
+.frame3 { grid-area: frame3; }
+.frame4 { grid-area: frame4; }
+.frame5 { grid-area: frame5; }
+.frame6 { grid-area: frame6; }
+.frame7 { grid-area: frame7; }
+.frame8 { grid-area: frame8; }
+.frame9 { grid-area: frame9; }
+.frame10 { grid-area: frame10; }
+.frame11 { grid-area: frame11; }
+.frame12 { grid-area: frame12; }
+.frame13 { grid-area: frame13; }
+.frame14 { grid-area: frame14; }
 
 .frame15 {
     width: 100%;
-    padding: 50px 0px;
+    padding: 30px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +84,7 @@ body {
     "frame15 frame15 frame15 frame15";
 }
 
-/* Mobile Responsive Adjustments */
+/* Mobile Responsive Media Query */
 @media screen and (max-width: 768px) {
     .cont {
         margin: 10px 10px;
@@ -188,14 +108,5 @@ body {
         "frame13"
         "frame14"
         "frame15";
-    }
-
-    /* Automatically scale frame heights proportionally on mobile so images aren't cropped or distorted */
-    .frame1, .frame2, .frame3, .frame4, .frame5, .frame7, .frame8 {
-        height: 250px;
-    }
-
-    .frame6, .frame9, .frame10, .frame11, .frame12, .frame13, .frame14 {
-        height: 400px;
     }
 }
