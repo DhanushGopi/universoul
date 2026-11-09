@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(239, 239, 239);
+    overflow-x: hidden;
 }
 
 .cont {
@@ -19,16 +20,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 25px;
+    margin: 10px auto;
+    padding: 0 10px;
 }
 
-/* Base styles for all image frames */
+/* Base styles for image frames */
 .frames {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    border-radius: 16px;
-    object-fit: contain;
+    border-radius: 12px;
+    object-fit: cover; /* Keeps cells filled proportionally without empty letterbox gaps */
 }
 
 /* Grid Area Mappings */
@@ -49,26 +51,43 @@ body {
 
 .frame15 {
     width: 100%;
-    padding: 30px 0px;
+    padding: 25px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Archivo", serif;
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(29, 29, 29);
     font-weight: 500;
     text-decoration: none;
     background-color: white;
     grid-area: frame15;
+    border-radius: 12px;
 }
 
 .cont-frames {
     width: 100%;
     display: grid;
+    /* Uses responsive fractional units so the whole 4-column layout scales down proportionally on smaller screens */
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-template-rows: auto;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    /* Proportional row sizing matching your asset heights */
+    grid-template-rows: 
+        minmax(100px, 420px) 
+        minmax(100px, 205px) 
+        minmax(100px, 205px) 
+        minmax(100px, 420px) 
+        minmax(100px, 205px) 
+        minmax(100px, 205px) 
+        minmax(100px, 212px) 
+        minmax(100px, 212px) 
+        minmax(100px, 212px) 
+        minmax(100px, 212px) 
+        minmax(100px, 283px) 
+        minmax(100px, 283px) 
+        minmax(100px, 283px) 
+        auto;
+    grid-row-gap: 8px;
+    grid-column-gap: 8px;
     grid-template-areas:
     "frame1 frame1 frame1 frame1"
     "frame2 frame2 frame3 frame4"
@@ -82,31 +101,4 @@ body {
     "frame13 frame13 frame13 frame14"
     "frame13 frame13 frame13 frame14"
     "frame15 frame15 frame15 frame15";
-}
-
-/* Mobile Responsive Media Query */
-@media screen and (max-width: 768px) {
-    .cont {
-        margin: 10px 10px;
-    }
-
-    .cont-frames {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "frame1"
-        "frame2"
-        "frame3"
-        "frame4"
-        "frame5"
-        "frame6"
-        "frame7"
-        "frame8"
-        "frame9"
-        "frame10"
-        "frame11"
-        "frame12"
-        "frame13"
-        "frame14"
-        "frame15";
-    }
 }
