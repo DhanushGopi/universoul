@@ -25,8 +25,8 @@ body {
 .frames {
     border-radius: 16px;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat; 
+    background-size: contain; /* Changed from cover to contain so assets don't get cut off */
 }
 
 .frame1 {
@@ -37,7 +37,6 @@ body {
 }
 
 .frame2 {
-    object-fit: contain;
     grid-area: frame2;
     height: 420px; 
     background-color: blue; 
@@ -45,7 +44,6 @@ body {
 }
 
 .frame3 {
-    object-fit: contain;
     grid-area: frame3;
     height: 420px; 
     background-color: blue; 
@@ -53,7 +51,6 @@ body {
 }
 
 .frame4 {
-    object-fit: contain;
     grid-area: frame4;
     height: 420px; 
     background-color: blue; 
@@ -61,7 +58,6 @@ body {
 }
 
 .frame5 {    
-    object-fit: contain;
     grid-area: frame5;
     height: 420px; 
     background-color: blue; 
@@ -69,7 +65,6 @@ body {
 }
 
 .frame6 {
-    object-fit: contain;
     grid-area: frame6;
     height: 850px;
     background-color: blue; 
@@ -77,7 +72,6 @@ body {
 }
 
 .frame7 {
-    object-fit: contain;
     grid-area: frame7;
     height: 420px; 
     background-color: blue; 
@@ -85,7 +79,6 @@ body {
 }
 
 .frame8 {
-    object-fit: contain;
     grid-area: frame8;
     height: 420px; 
     background-color: blue; 
@@ -93,7 +86,6 @@ body {
 }
 
 .frame9 {
-    object-fit: contain;
     grid-area: frame9;
     height: 850px;
     background-color: blue; 
@@ -101,7 +93,6 @@ body {
 }
 
 .frame10 {
-    object-fit: contain;
     grid-area: frame10;
     height: 850px;
     background-color: blue; 
@@ -109,7 +100,6 @@ body {
 }
 
 .frame11 {
-    object-fit: contain;
     grid-area: frame11;
     height: 850px;
     background-color: blue; 
@@ -117,7 +107,6 @@ body {
 }
 
 .frame12 {
-    object-fit: contain;
     grid-area: frame12;
     height: 850px;
     background-color: blue;
@@ -125,7 +114,6 @@ body {
 }
 
 .frame13 {   
-    object-fit: contain;
     grid-area: frame13;
     height: 850px;
     background-color: blue;
@@ -133,7 +121,6 @@ body {
 }
 
 .frame14 {
-    object-fit: contain;
     grid-area: frame14;
     height: 850px;
     background-color: blue; 
